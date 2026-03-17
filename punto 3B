@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main() {
+
+    string texto;
+    char letra;
+    int i = 0;
+    int cont = 0;
+
+    cout << "Escribi una palabra bro: ";
+    cin >> texto;
+
+    cout << "Que letra queres contar?: ";
+    cin >> letra;
+
+    while(i < texto.length()) {
+
+        if(texto[i] == letra) {
+            cont = cont + 1;
+        }
+
+        i = i + 1;
+    }
+    cout << "La letra aparece " << cont << "veces";
+
+    return 0;
+}
