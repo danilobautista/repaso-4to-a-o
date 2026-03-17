@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int num;
+
+    cout << "Poné un numero del 1 al 7 porfis: ";
+    cin >> num;
+
+    if (num == 1) {
+        cout << "Es lunes";
+    }
+    else if (num == 2) {
+        cout << "Es martes";
+    }
+    else if (num == 3) {
+        cout << "Es miercoles";
+    }
+    else if (num == 4) {
+        cout << "Es jueves";
+    }
+    else if (num == 5) {
+        cout << "Es viernes";
+    }
+    else if (num == 6) {
+        cout << "Es sabado";
+    }
+    else if (num == 7) {
+        cout << "Es domingo";
+    }
+    else {
+        cout << "no es valido, te dije del 1 al 7";
+    }
+    return 0;
+}
