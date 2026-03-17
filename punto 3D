@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main() {
+
+    int corredor1 = 0;
+    int corredor2 = 0;
+    int segundos = 0;
+
+    while(corredor1 < 100 && corredor2 < 100) {
+
+        corredor1 = corredor1 + rand()%10 + 1;
+        corredor2 = corredor2 + rand()%10 + 1;
+
+        segundos = segundos + 1;
+    }
+
+    if(corredor1 > corredor2) {
+        cout << "Gano el corredor 1 en " << segundos << " segundos";
+    }
+    else {
+        cout << "Gano el corredor 2 en " << segundos << " segundos" << endl;
+        cout << "no se como hacer que cambie el resultado, perdon plis";
+    }
+    return 0;
+}
