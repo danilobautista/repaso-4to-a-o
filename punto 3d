@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+
+    int num;
+    int producto = 1;
+
+    cout << "Poné numeros positivos y terminá con un numnero negativo: ";
+    cin >> num;
+
+    while(num >= 0) {
+
+        producto = producto * num;
+        cin >> num;
+    }
+    cout << "El producto total es " << producto;
+
+    return 0;
+}
