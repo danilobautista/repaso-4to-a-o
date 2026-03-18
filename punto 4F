@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+int main() {
+
+    int secreto = rand()%100 + 1;
+    int num;
+
+    cout << "Adivina el numero: ";
+    cin >> num;
+
+    while(num != secreto) {
+
+        if(num > secreto) {
+            cout << "nop, es mas chico: ";
+        } else {
+            cout << "nop, es mas grande: ";
+        }
+
+        cin >> num;
+    }
+
+    cout << "Buen chico, adivinaste";
+    return 0;
+}
