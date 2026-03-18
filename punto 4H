@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main() {
+
+    string palabra = "casa";
+    char letra;
+
+    for(int i = 0; i < palabra.length(); i++) {
+
+        cout << "Adivina la letra bro " << i+1 << ": ";
+        cin >> letra;
+
+        if(letra == palabra[i]) {
+            cout << "Correcto" << endl;
+        } else {
+            cout << "nop, incorrecto" << endl;
+        }
+    }
+
+    cout << "La palabra eraaa " << palabra;
+    return 0;
+}
