@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+int main() {
+
+    int usuario, compu;
+
+    cout << "1 piedrita, 2 papelito, 3 tijerita: ";
+    cin >> usuario;
+
+    compu = rand()%3 + 1;
+
+    cout << "La compu eligio " << compu << endl;
+
+    if(usuario == compu) {
+        cout << "Empate";
+    }
+    else if((usuario == 1 && compu == 3) || (usuario == 2 && compu == 1) || (usuario == 3 && compu == 2)) {
+        cout << "Ganaste";
+    }
+    else {
+        cout << "Perdiste, bot.";
+    }
+
+    return 0;
+}
